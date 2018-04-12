@@ -1,9 +1,10 @@
 const express = require('express');
-const router  = express.Router();
+
+const router = express.Router();
+const controller = require('../controllers/form.controller');
+
 
 /* GET home page. */
-router.get('/', (req, res, next) => {
-  res.render('index');
-});
+router.get('/', controller.getForm);
 
 module.exports = router;
