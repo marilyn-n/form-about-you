@@ -1,11 +1,19 @@
 <h1><%= title %></h1>
 <p>Welcome to <%= title %></p>
 
-<form action="/">
+<form action="/" method="POST">
   <label for="">What's your name?</label>
   <input placeholder="Full Name" type="text" name="fullName">
   <br>
   <label for="">How old are you</label>
   <input placeholder="Your Age" type="text" name="age">
   <br>
+  <label for="">Where are you from?</label>
+  <input placeholder="Type your country" type="text" name="country">
+  <br>
+  <label for="">Whats your favorite color?</label>
+  <input placeholder="Favorite Color" type="color" name="color">
+  <br>
+  <label for="">When it's your birthday?</label>
+  <input type="date" name="birthday">
 </form>
