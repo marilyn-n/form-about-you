@@ -29,11 +29,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(layouts);
 
 const index = require('./routes/index.js');
-const formDetails = require('./routes/form-info.js');
+const formDetails = require('./routes/user-info');
 
 // Routes
 app.use('/', index);
-app.use('/form-info', formDetails);
+app.use('/user-info', formDetails);
 
 
 // catch 404 and forward to error handler
