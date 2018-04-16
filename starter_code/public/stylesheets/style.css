@@ -1,8 +1,15 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  padding:  20px 400px;
+  font: 17px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: blanchedalmond;
 }
 
 a {
   color: #00B7FF;
+}
+
+form{
+  border: 3px solid;
+  padding: 50px;
+  background-color: rgba(250, 249, 174, 0.842);
 }

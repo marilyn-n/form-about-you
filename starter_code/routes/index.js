@@ -9,7 +9,7 @@ router.get('/', (req, res) => {
   res.render('index');
 });
 
-router.post('/', (req, res, next) => {
+router.post('/', (req, res) => {
   const newForm = new Form({
     fullName: req.body.fullName,
     age: req.body.age,
