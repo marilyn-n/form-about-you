@@ -19,12 +19,12 @@ router.post('/', (req, res) => {
     favBook: req.body.favBook,
   });
   newForm.save()
-    .then(() => console.log('usuario guardado!!!'))
+    .then(() => {
+      console.log('usuario guardado!!!');
+      res.render('form-info');
+      // res.status(200).json();
+    })
     .catch(() => console.log('oh oh error'));
-});
-
-router.get('/form-info', (req, res) => {
-  res.render('form-info');
 });
 
 module.exports = router;

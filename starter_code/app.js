@@ -28,8 +28,8 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(layouts);
 
-const index = require('./routes/index');
-const formDetails = require('./routes/index');
+const index = require('./routes/index.js');
+const formDetails = require('./routes/form-info.js');
 
 // Routes
 app.use('/', index);
