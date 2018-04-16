@@ -13,6 +13,7 @@ form{
   padding: 50px;
   background-color: rgba(250, 249, 174, 0.842);
 }
+
 input[type="submit"]{
   background-color: red;
   padding: 5px;

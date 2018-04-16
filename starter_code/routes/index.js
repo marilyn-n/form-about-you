@@ -23,5 +23,8 @@ router.post('/', (req, res) => {
     .catch(() => console.log('oh oh error'));
 });
 
+router.get('/form-info', (req, res) => {
+  res.render('form-info');
+});
 
 module.exports = router;
