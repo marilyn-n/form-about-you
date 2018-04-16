@@ -8,7 +8,7 @@ const layouts = require('express-ejs-layouts');
 const mongoose = require('mongoose');
 
 
-mongoose.connect('mongodb://localhost/starter-code');
+mongoose.connect('mongodb://localhost/form-info');
 
 const app = express();
 
