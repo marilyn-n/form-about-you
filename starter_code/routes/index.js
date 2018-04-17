@@ -1,6 +1,7 @@
 const express = require('express');
 
 const router = express.Router();
+
 const User = require('../models/User');
 
 
@@ -21,7 +22,7 @@ router.post('/', (req, res) => {
   newUser.save()
     .then(() => {
       console.log('usuario guardado!!!');
-      res.render('user-details');
+      res.redirect('user-details');
       // res.status(200).json();
     })
     .catch(() => console.log('oh oh error'));
